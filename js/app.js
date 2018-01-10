@@ -144,3 +144,23 @@ function init(url) {
   $('[rel="popover"],[data-rel="popover"],[data-toggle="popover"]').popover();
 
 }
+function computeDesiredElementHeight() {
+    var resultValue,
+        viewportWidth = document.documentElement.clientWidth;
+
+    if (viewportWidth > 700) {
+        resultValue = 300;
+    } else if (viewportWidth > 500) {
+        resultValue = 230;
+    } else {
+        resultValue = 120;
+    }
+
+    return resultValue;
+};
+function init2(){
+  new Gridzy(document.querySelector('.gridzy'), {
+    desiredElementHeight: computeDesiredElementHeight,
+    spaceBetweenElements: 10
+  });
+}
