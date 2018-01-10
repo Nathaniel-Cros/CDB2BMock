@@ -4,3 +4,43 @@
 .al-le{
 	margin-left: 20px;
 }
+.top20{
+	margin-top: 20px;
+}
+footer{
+	margin-top: 100px;
+	width: 100%;
+}
+footer.footer {
+  padding: 50px 0 20px;
+  color: rgba(255, 255, 255, 0.7);
+  background: #282f71;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+footer.footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer.footer a:hover {
+  color: white;
+}
+
+footer.footer p {
+  font-size: 22px;
+}
+
+footer.footer .footer-contact-details {
+  margin: 15px 0;
+}
+
+footer.footer .footer-social {
+  margin-bottom: 75px;
+}
+
+footer.footer .copyright {
+  font-size: 1rem;
+}
