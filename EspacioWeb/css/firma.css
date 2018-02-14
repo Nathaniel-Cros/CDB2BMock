@@ -1,0 +1,44 @@
+table,
+th,
+td {
+  border: 0px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+
+table tr .logo {
+  border-right: 2px solid blue;
+  border-right-color: #282f71;
+}
+
+table .gris {
+  background-color: #d0d0d6;
+}
+
+table tr td p {
+  font-family: 'Raleway-Regular', sans-serif;
+  color: #585966;
+  font-size: 20px;
+}
+table tr .info{
+  line-height: 1.5;
+}
+a {
+  color: #585966;
+  text-decoration: none;
+}
+
+table tr td .azul {
+  font-family: 'Raleway-Bold', sans-serif;
+  color: #282f71;
+  font-size: 25px;
+}
+
+.iconRed {
+  margin: 5px;
+}

@@ -1,0 +1,30 @@
+#countdown {
+	list-style-type: none;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+#countdown>li {
+	display: inline-block;
+	margin-right: 25px;
+	width: 80px;
+}
+.timenumbers {
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 80px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.timedescription {
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+.separ{
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 150px;
+}
