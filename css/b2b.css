@@ -1,6 +1,13 @@
 .center-text{
 	text-align:center;
 }
+.logbar{
+	text-align: center;
+}
+.logbar > img{
+	margin-top: 20px;
+	margin-left: 10px;
+}
 .al-ri{
 	margin-right: 20px;
 }
