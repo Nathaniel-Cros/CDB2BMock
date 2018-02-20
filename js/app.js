@@ -158,7 +158,7 @@ function computeDesiredElementHeight() {
 
     return resultValue;
 };
-function init2(){
+function init55(){
   new Gridzy(document.querySelector('.gridzy'), {
     desiredElementHeight: computeDesiredElementHeight,
     spaceBetweenElements: 10
