@@ -35,7 +35,7 @@
     </div>
     <div class="col-md-4">
       <input type="button" class="btn btn-outline-primary al-ri" value="Registro" />
-      <input type="button" class="btn btn-outline-success al-le" value="Iniciar de Sesión" />
+      <input type="button" class="btn btn-outline-success al-le" data-toggle="modal" data-target="#Login" value="Iniciar de Sesión" />
     </div>
   </header>
   <div class="app-body">
@@ -545,21 +545,59 @@
       <p class="copyright">&copy; 2017 Connectedb2b</p>
     </div>
   </footer>
-  <!-- Bootstrap and necessary plugins -->
-  <script src="plugins/js/jquery.min.js"></script>
-  <script src="plugins/js/popper.min.js"></script>
-  <script src="plugins/js/bootstrap.min.js"></script>
-  <script src="plugins/js/pace.min.js"></script>
-  <script src="plugins/js/gridzy-1.1.js"></script>
-  <!-- Plugins and scripts required by all views -->
-  <script src="plugins/js/Chart.min.js"></script>
-  <script src="js/app.js"></script>
-
-  <!-- Plugins and scripts required by this views -->
-  <script src="plugins/js/gauge.min.js"></script>
-  <script>
-    window.addEventListener('load', init2);
-  </script>
+  <!-- Login -->
+  <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="LabelSesion" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LabelSesion">Iniciar Sesión</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          <form action="" method="post">
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-user fa-2x"></i></span>
+                </div>
+                <input type="text" id="username" name="username" class="form-control" placeholder="Username">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-asterisk fa-2x"></i></span>
+                </div>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <a href="indexlog.html"><button type="button" class="btn btn-outline-success">Iniciar Sesión</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
+<!-- Bootstrap and necessary plugins -->
+<script src="plugins/js/jquery.min.js"></script>
+<script src="plugins/js/popper.min.js"></script>
+<script src="plugins/js/bootstrap.min.js"></script>
+<script src="plugins/js/pace.min.js"></script>
+<script src="plugins/js/gridzy-1.1.js"></script>
+<!-- Plugins and scripts required by all views -->
+<script src="plugins/js/Chart.min.js"></script>
+<script src="js/app.js"></script>
+
+<!-- Plugins and scripts required by this views -->
+<script src="plugins/js/gauge.min.js"></script>
+<script>
+  window.addEventListener('load', init2);
+</script>
 
 </html>
