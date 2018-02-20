@@ -191,14 +191,13 @@
               </div>
             </div>
             <div class="col-6">
-              <h2 class="center-text">Lote de telas de ceda</h2><br>
-              <h4>Lote de 500 rollos de tela con una amplia variedad de colores y patrones.</h4>
+              <h2 class="center-text">Seleciona tu forma de pago</h2><br>
               <br><br><br>
-              <h3><img src="img/empresa/Dinero.png" width="7%" alt="$">90,000</h3>
-              <p>*Minima compra 1 lote, 20 en existencia</p>
-              <p><input type="text" value="1" class="center-text"> Numero de lotes</p>
-              <p><button type="button" class="btn btn-primary">Ficha tecnica</button></p>
-              <p><a href="productoCompra.html"><button type="button" class="btn btn-warning">Negociar el producto</button></a></p>
+              <p><button type="button" class="pago btn btn-outline-secondary btn-lg">Modalidad pago directo</button></p>
+              <p><button type="button" class="pago btn btn-primary btn-lg">Pago Seguro Connected</button></p>
+              <div id="pagoFull" class="alert alert-success d-none" role="alert">
+                <h1>Pago Existoso</h1>
+              </div>
             </div>
           </div>
           <div class="row top20">
@@ -521,7 +520,9 @@
   <!-- Plugins and scripts required by this views -->
   <script src="plugins/js/gauge.min.js"></script>
   <script>
-    window.addEventListener('load', init2);
+    $(".pago").click(function() {
+      $("#pagoFull").removeClass("d-none");
+    });
   </script>
 </body>
 
